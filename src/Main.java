@@ -1,3 +1,10 @@
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -15,6 +22,10 @@ public class Main {
         } else {
             System.out.println("O Número " + num + " pertence a sequência de fibonacci");
         }
+
+
+        ArrayList<Double> vetor = new ArrayList<>();
+
     }
     public static boolean Fibonacci(int num) {
         int n1 = 0, n2 = 1;
@@ -33,4 +44,5 @@ public class Main {
         }
         return false;
     }
+
 }
