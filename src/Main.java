@@ -28,6 +28,7 @@ public class Main {
             System.out.println("O Número " + num + " pertence a sequência de fibonacci");
         }
         Thread.sleep(2200);
+        // 3o exercício fiz na outra classe, Faturamento.java
         System.out.println("\n");
         // 4o Exercício
         System.out.println("Quarto exercício, PERCENTUAL FATURAMENTO");
