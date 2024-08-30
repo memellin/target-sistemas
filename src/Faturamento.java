@@ -10,7 +10,7 @@ public class Faturamento {
     public static void main(String[] args) {
         ObjectMapper mapper = new ObjectMapper();
         try {
-            // Leia o JSON do arquivo
+            //lendp JSON
             JsonNode rootNode = mapper.readTree(new File("src/faturamento.json"));
             processarFaturamento(rootNode);
         } catch (IOException e) {
@@ -19,7 +19,7 @@ public class Faturamento {
     }
 
     public static void processarFaturamento(JsonNode rootNode) {
-        // lógica para calcular os valores desejados
+        // Lógica para calcular os valores desejados
         double menorValor = Double.MAX_VALUE;
         double maiorValor = Double.MIN_VALUE;
         double soma = 0;
@@ -50,7 +50,7 @@ public class Faturamento {
         System.out.println("Maior valor de faturamento: " + maiorValor);
         System.out.println("Média de faturamento: " + media);
 
-        // Conta os dias acima da média
+        // Contando os dias acima da média
         int diasAcimaDaMedia = 0;
         elements = rootNode.elements();
         while (elements.hasNext()) {
